@@ -1,0 +1,77 @@
+html, body {
+    overflow-x: hidden;
+}
+
+#bandNameElement {
+    font-size:7vw
+}
+
+#splashLogo {
+    width: 25vw;
+}
+
+#spotifyContainer {padding-top:8rem;padding-bottom:8rem}
+.bottomSection {
+    padding-bottom:6rem
+}
+#videoContainer {padding-bottom:8rem}
+
+@media (max-width: 767.98px) {
+    #splashLogo {
+        width: 75vw;
+    }
+    #spotifyContainer {padding-top:4rem;padding-bottom:4rem}
+    #videoContainer {padding-bottom:2rem}
+    .bottomSection {
+        padding-bottom:5rem
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #splashLogo {
+        width: 50vw;
+    }
+}
+
+.navbar {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.bg-black {background-color: black;}
+
+#tour {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='30' height='30' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M0 22.5h30v15H0zm15-15h30v15H15m-30-15h30v15h-30zm15-15h30v15H0z'  stroke-width='1' stroke='hsla(196, 49%, 67%, 0.21)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+}
+
+
+
+#contact {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='M0 0h10v20H0zM30 0v10H10V0zM10 10h10v20H10zM40 10v10H20V10zM20 20h10v20H20zM50 20v10H30V20zM30 30h10v20H30zM20 30v10H0V30zM10 20v10h-20V20zM30-10h10v20H30z'  stroke-width='1' stroke='hsla(182, 86%, 78%, 0.16)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+
+/* NOTE: THIS IMAGE WAS PULLED FROM https://vanderbilthustler.com/2022/04/08/vanderbilt-band-edgehill-rocks-exit-in/ - THIS IS NOT TO BE USED IN PRODUCTION, AS I DO NOT HAVE THE RIGHTS TO IT */
+.parallax-bg {
+    background-image: url('/edgehill-frontman.jpg');
+    height: 100vh; /* Full screen height */
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Key for parallax effect */
+    filter: brightness(40%);
+    position: relative; /* To maintain its position in the flow */
+    z-index: -100; /* Behind the other content */
+  }
